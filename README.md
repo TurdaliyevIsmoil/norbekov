@@ -1,1 +1,1 @@
-You need Buld file for deploy AWS
+You need Build file for deploy AWS
