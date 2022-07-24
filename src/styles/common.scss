@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--n0-color);
+    font-family: "Gilroy", sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul,
+ol,
+menu {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: medium;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+
+    @media (max-width: 1023px) {
+        font-size: 64px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 48px;
+    }
+}
+
+h2 {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 100%;
+    position: relative;
+
+    text-align: center;
+    color: #333333;
+    text-transform: capitalize;
+
+    span.absolute {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-30%);
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 128px;
+        line-height: 100%;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: rgba(0, 0, 0, 0.02);
+
+        @media (max-width: 1023px) {
+            font-size: 72px;
+        }
+    }
+
+    @media (max-width: 1023px) {
+        font-size: 48px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 36px;
+    }
+}
+
+h3 {
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 100%;
+    /* identical to box height, or 30px */
+}
+
+h4 {
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+h5 {
+    font-family: "Gilroy";
+    font-weight: medium;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+p {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--n3-color);
+
+    @media (max-width: 1599px) {
+        font-size: 18px;
+    }
+
+    &.lg {
+        font-size: 22px;
+        font-family: "Gilroy-Regular";
+    }
+
+    &.sm {
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
+
+.playfair {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
