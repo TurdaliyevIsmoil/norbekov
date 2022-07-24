@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1301b6a0.css",
+    "main.js": "/static/js/main.f5261df4.js",
+    "static/media/description.png": "/static/media/description.2cb0535d447c60a222de.png",
+    "static/media/omil.png": "/static/media/omil.47f5c7d99f050156ecf9.png",
+    "static/media/result-bg.png": "/static/media/result-bg.63fa991cd6ce74ed0f53.png",
+    "static/media/body.png": "/static/media/body.40f1d90a9ea72aa9d89a.png",
+    "static/media/spirit.png": "/static/media/spirit.1a1532a9c54c6ceb431e.png",
+    "static/media/mind.png": "/static/media/mind.eb63ad20fe33ecc0d1c8.png",
+    "static/media/soul.png": "/static/media/soul.ef0b8094e1a158c348e8.png",
+    "static/media/Gilroy-Medium.eot": "/static/media/Gilroy-Medium.2fea647f59b209f411b1.eot",
+    "static/media/Gilroy-Medium.ttf": "/static/media/Gilroy-Medium.1c23f810e531d0702f76.ttf",
+    "static/media/Gilroy-Regular.eot": "/static/media/Gilroy-Regular.19055ba082a9f78262f6.eot",
+    "static/media/Gilroy-Regular.ttf": "/static/media/Gilroy-Regular.fa652e766b6a85a1f9cb.ttf",
+    "static/media/Gilroy-Bold.eot": "/static/media/Gilroy-Bold.aa68c169bc1dc3db278e.eot",
+    "static/media/Gilroy-Bold.ttf": "/static/media/Gilroy-Bold.901a60fc2835c74fba67.ttf",
+    "static/media/factory_of_success.jpg": "/static/media/factory_of_success.d6f1eee58041f8c57684.jpg",
+    "static/media/opportunity.png": "/static/media/opportunity.1aebc565fd988a41bebb.png",
+    "static/media/important.png": "/static/media/important.32eea6498d3bce15197b.png",
+    "static/media/Gilroy-Medium.woff": "/static/media/Gilroy-Medium.5329bc502cdc219ad294.woff",
+    "static/media/Gilroy-Bold.woff": "/static/media/Gilroy-Bold.0607a1bc636f63251ed8.woff",
+    "static/media/Gilroy-Regular.woff": "/static/media/Gilroy-Regular.ebe86c0337572553acea.woff",
+    "static/media/logo.svg": "/static/media/logo.73929de60aa830dbf2a93ad9f8d9da41.svg",
+    "static/media/Gilroy-Medium.woff2": "/static/media/Gilroy-Medium.acd4e613de34a826c191.woff2",
+    "static/media/Gilroy-Bold.woff2": "/static/media/Gilroy-Bold.ef7c40ff1efeaaa4c7c6.woff2",
+    "static/media/Gilroy-Regular.woff2": "/static/media/Gilroy-Regular.f6c9931fabe5a6eb3307.woff2",
+    "static/media/club_of_millioners.png": "/static/media/club_of_millioners.1b319fee32574564af53.png",
+    "static/media/perv-health.jpg": "/static/media/perv-health.eeb884a12c2791c3fd4b.jpg",
+    "static/media/success.png": "/static/media/success.9347661336167340ed59.png",
+    "static/media/line-shape.svg": "/static/media/line-shape.3f98fb8d78a813a104482a04be4248f9.svg",
+    "static/media/down.svg": "/static/media/down.69eb4e7853db85dd5e53382d4d467671.svg",
+    "index.html": "/index.html",
+    "static/media/getFetch.cjs": "/static/media/getFetch.c780682470504fffbd04.cjs",
+    "main.1301b6a0.css.map": "/static/css/main.1301b6a0.css.map",
+    "main.f5261df4.js.map": "/static/js/main.f5261df4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1301b6a0.css",
+    "static/js/main.f5261df4.js"
+  ]
+}
