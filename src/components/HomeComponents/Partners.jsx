@@ -1,4 +1,3 @@
-import i18next from "i18next";
 import React from "react";
 import styled from "styled-components";
 import rassiya1 from "../../images/rassiya1.png";

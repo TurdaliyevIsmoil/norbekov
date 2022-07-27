@@ -7,11 +7,9 @@ import { UseDataContext } from "../../store/contexts/DataContext";
 import Button from "../../UI/Button";
 import Devider from "../../UI/Devider";
 import EditorWrapper from "../../UI/EditorWrapper";
-import ContactForm from "../ContactForm";
 import OtherNews from "../NewsComponents/OtherNews";
 import Title from "../Title";
 import ServiceCards from "./ServiceCards";
-import ServiceTableRow from "./ServiceTableRow";
 
 function ServiceContent() {
   const lang = i18next.language;

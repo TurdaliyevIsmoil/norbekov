@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import img from "../../images/opportunity.png";
 import line from "../../images/line-shape.svg";
-import Devider from "../../UI/Devider";
 import { useTranslation } from "react-i18next";
 
 function Skills() {

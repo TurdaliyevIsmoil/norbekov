@@ -2,6 +2,9 @@ import { createContext, useContext, useEffect, useReducer } from "react";
 import DataReducer from "../reducers/DataReducer";
 import action from "../actions/DataActions";
 
+// const mainPath = "localhost:8080";
+const mainPath = "https://norbekov.herokuapp.com";
+
 const Data = createContext();
 const initialState = {
   filtered: [],
@@ -13,19 +16,19 @@ export const DataProvider = ({ children }) => {
   const [state, dispatch] = useReducer(DataReducer, initialState);
 
   const fetchNews = async () => {
-    await fetch("https://norbekov.herokuapp.com/newsS/get")
+    await fetch(`${mainPath}/newsS/get`)
       .then((r) => r.json())
       .then((r) => dispatch({ type: action.SET_NEWS, payload: r }))
       .catch((e) => console.log(e));
   };
   const fetchServices = async () => {
-    await fetch("https://norbekov.herokuapp.com/services/get")
+    await fetch(`${mainPath}/services/get`)
       .then((r) => r.json())
       .then((r) => dispatch({ type: action.SET_SERVICES, payload: r }))
       .catch((e) => console.log(e));
   };
   const fetchTables = async () => {
-    await fetch("https://norbekov.herokuapp.com/tables/get")
+    await fetch(`${mainPath}/tables/get`)
       .then((r) => r.json())
       .then((r) => dispatch({ type: action.SET_TABLES, payload: r }))
       .catch((e) => console.log(e));
@@ -38,7 +41,7 @@ export const DataProvider = ({ children }) => {
 
   const sendContact = async (data) => {
     try {
-      const e = await fetch("https://norbekov.herokuapp.com/contact/create", {
+      const e = await fetch(`${mainPath}/contact/create`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -3,8 +3,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import { UseDataContext } from "../../store/contexts/DataContext";
-import Button from "../../UI/Button";
 import Devider from "../../UI/Devider";
 import MainCoursesCard from "./MainCoursesCard";
 import img1 from "../../images/perv-health.jpg";

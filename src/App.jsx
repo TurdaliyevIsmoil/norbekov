@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
-import { Route, Routes, useLocation, useParams } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import ServiceInner from "./pages/ServiceInner";
 import HomePage from "./pages/HomePage";
 import ServicesPage from "./pages/ServicesPage";
-import Devider from "./UI/Devider";
 import NewsPage from "./pages/NewsPage";
 import NewInner from "./pages/NewInner";
 import ContactsPage from "./pages/ContactsPage";

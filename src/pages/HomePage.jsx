@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import ContactForm from "../components/ContactForm";
-import Footer from "../components/Footer";
 import AboutUs from "../components/HomeComponents/AboutUs";
 import Employers from "../components/HomeComponents/Employers";
 import Factor from "../components/HomeComponents/Factor";

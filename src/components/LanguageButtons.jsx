@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import uz from "../images/uz.png";
-import eng from "../images/eng.png";
 import ru from "../images/ru.png";
 import down from "../images/down.svg";
 import styled from "styled-components";

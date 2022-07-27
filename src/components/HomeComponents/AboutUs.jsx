@@ -2,7 +2,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import Button from "../../UI/Button";
 
 function AboutUs() {
   const { t } = useTranslation();

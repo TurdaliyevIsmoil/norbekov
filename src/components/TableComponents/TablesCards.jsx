@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import CourseCard from "../Cards/CourseCard";
-import { UseDataContext } from "../../store/contexts/DataContext";
 
 function TablesCards({ tables }) {
   return (

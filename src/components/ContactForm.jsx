@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { UseDataContext } from "../store/contexts/DataContext";
 import Button from "../UI/Button";
-import Devider from "../UI/Devider";
 
 function ContactForm() {
   const { t } = useTranslation();

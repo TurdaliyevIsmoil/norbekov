@@ -7,8 +7,6 @@ import { UseDataContext } from "../../store/contexts/DataContext";
 import Button from "../../UI/Button";
 import Devider from "../../UI/Devider";
 import EditorWrapper from "../../UI/EditorWrapper";
-import CourseCard from "../Cards/CourseCard";
-import ContactForm from "../ContactForm";
 import Loading from "../Loading";
 import OtherNews from "../NewsComponents/OtherNews";
 import Title from "../Title";
