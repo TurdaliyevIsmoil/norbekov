@@ -2,8 +2,8 @@ import { createContext, useContext, useEffect, useReducer } from "react";
 import DataReducer from "../reducers/DataReducer";
 import action from "../actions/DataActions";
 
-// const mainPath = "localhost:8080";
-const mainPath = "https://norbekov.herokuapp.com";
+const mainPath = "localhost:8080";
+// const mainPath = "https://norbekov.herokuapp.com";
 
 const Data = createContext();
 const initialState = {
