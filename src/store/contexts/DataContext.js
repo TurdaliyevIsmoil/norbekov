@@ -2,10 +2,8 @@ import { createContext, useContext, useEffect, useReducer } from "react";
 import DataReducer from "../reducers/DataReducer";
 import action from "../actions/DataActions";
 
-const mainPath = "localhost:8080";
-// const mainPath = "https://norbekov.herokuapp.com";
-
 const Data = createContext();
+console.log(process.env)
 const initialState = {
   filtered: [],
   news: [],
@@ -16,24 +14,29 @@ export const DataProvider = ({ children }) => {
   const [state, dispatch] = useReducer(DataReducer, initialState);
 
   const fetchNews = async () => {
-    await fetch(`${mainPath}/newsS/get`)
+    await fetch(`http://${process.env.REACT_APP_MAIN_API_PATH_KEY}/newsS/get`)
       .then((r) => r.json())
       .then((r) => dispatch({ type: action.SET_NEWS, payload: r }))
       .catch((e) => console.log(e));
   };
   const fetchServices = async () => {
-    await fetch(`${mainPath}/services/get`)
+    await fetch(`http://${process.env.REACT_APP_MAIN_API_PATH_KEY}/services/get`)
       .then((r) => r.json())
       .then((r) => dispatch({ type: action.SET_SERVICES, payload: r }))
       .catch((e) => console.log(e));
   };
   const fetchTables = async () => {
-    await fetch(`${mainPath}/tables/get`)
-      .then((r) => r.json())
-      .then((r) => dispatch({ type: action.SET_TABLES, payload: r }))
-      .catch((e) => console.log(e));
+    let requestOptions = {
+      method: 'GET',
+      redirect: 'follow'
+    };
+    
+    fetch(`http://${process.env.REACT_APP_MAIN_API_PATH_KEY}/tables/get`, requestOptions)
+      .then(response => response.json())
+      .then(r => dispatch({ type: action.SET_TABLES, payload: r }))
+      .catch(error => console.log('error', error));
   };
-
+// dispatch({ type: action.SET_TABLES, payload: r })
   const filterFormat = (type) => {
     console.log(type);
     dispatch({ type: action.FILTER_FORMAT, payload: type });
@@ -41,7 +44,7 @@ export const DataProvider = ({ children }) => {
 
   const sendContact = async (data) => {
     try {
-      const e = await fetch(`${mainPath}/contact/create`, {
+      const e = await fetch(`http://${process.env.REACT_APP_MAIN_API_PATH_KEY}/contact/create`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
