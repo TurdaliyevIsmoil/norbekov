@@ -44,7 +44,7 @@ export const DataProvider = ({ children }) => {
 
   const sendContact = async (data) => {
     try {
-      const e = await fetch(`${process.env.REACT_APP_HTTP}://${process.env.REACT_APP_MAIN_API_PATH_KEY}/api/contact/create`, {
+      const e = await fetch(`${process.env.REACT_APP_HTTP}://${process.env.REACT_APP_MAIN_API_PATH_KEY}/contact/create`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
