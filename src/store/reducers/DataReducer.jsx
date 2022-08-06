@@ -32,7 +32,6 @@ export default (state, action) => {
           : action.payload.date === "latest"
           ? format.sort((a, b) => a.id < b.id)
           : format.sort((a, b) => a.id > b.id);
-      console.log(date);
       return {
         ...state,
         filtered: date,

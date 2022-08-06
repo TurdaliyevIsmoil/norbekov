@@ -10,18 +10,18 @@ import Loading from "../components/Loading";
 
 function TablesPage() {
   const { t } = useTranslation();
-  const { filtered, fetchTables } = UseDataContext();
+  const { filtered, fetchTables, tables } = UseDataContext();
   const [count, setcount] = useState(6);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    if (filtered?.length === 0) {
+    if (tables.length === 0) {
       fetchTables();
     }
-  }, []);
+  }, [tables]);
   return (
     <Wrapper>
-      <Loading load={filtered.length === 0} />
+      <Loading load={tables.length === 0} />
       <Devider half />
       <Title title={t("tables-title")} />
       <Devider half />

@@ -38,7 +38,6 @@ export const DataProvider = ({ children }) => {
   };
   // dispatch({ type: action.SET_TABLES, payload: r })
   const filterFormat = (type) => {
-    console.log(type);
     dispatch({ type: action.FILTER_FORMAT, payload: type });
   };
 

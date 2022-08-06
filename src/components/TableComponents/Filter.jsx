@@ -11,6 +11,7 @@ function Filter() {
 
   useEffect(() => {
     filterFormat({ format: format, date: date });
+    return
   }, [format, date]);
   return (
     <Wrapper className="container">
