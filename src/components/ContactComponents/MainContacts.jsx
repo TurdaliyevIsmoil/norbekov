@@ -25,8 +25,8 @@ function MainContacts() {
             </svg>
           </div>
           <h3>{t("contact-phone")}</h3>
-          <a href={`tel:${t('information-call')}`} className="colored">
-            <h3>{t('information-call')}</h3>
+          <a href={`tel:998954767677`} className="colored">
+            <h3>+998954767677</h3>
           </a>
         </article>
         <article className="flex column align-center">
