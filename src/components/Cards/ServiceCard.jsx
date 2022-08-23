@@ -6,7 +6,7 @@ import styled from "styled-components";
 import Button from "../../UI/Button";
 
 function ServiceCard({ data }) {
-  const [item, setitem] = useState({ title: "", body: "" });
+  const [item, setitem] = useState({ title: "", body: "", price: '' });
   const navigate = useNavigate();
   const { t } = useTranslation();
   const lang = i18next.language;
@@ -15,10 +15,11 @@ function ServiceCard({ data }) {
     if (lang) {
       div.innerHTML = lang === "uz" ? data.post_body : data.post_body_ru;
       return lang === "uz"
-        ? setitem({ title: data.post_title, body: div.innerText.slice(0, 140) })
+        ? setitem({ title: data.post_title, body: div.innerText.slice(0, 140),  price: data.price})
         : setitem({
             title: data.post_title_ru,
             body: div.innerText.slice(0, 140),
+        price: data.price
           });
     }
   }, [lang]);
@@ -53,7 +54,7 @@ function ServiceCard({ data }) {
               />
             </svg>
           </Button>
-          <h3>$500</h3>
+          <h3>${item?.price}</h3>
         </div>
       </div>
     </Wrapper>
