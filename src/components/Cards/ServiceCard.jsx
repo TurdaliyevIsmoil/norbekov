@@ -23,6 +23,7 @@ function ServiceCard({ data }) {
         : setitem({
             title: data.post_title_ru,
             body: div.innerText.slice(0, 140),
+            price: data.price,
           });
     }
   }, [lang]);
@@ -57,7 +58,7 @@ function ServiceCard({ data }) {
               />
             </svg>
           </Button>
-          <h3>{item?.price}</h3>
+          <h3 className="price-inf">{item.price}</h3>
         </div>
       </div>
     </Wrapper>
@@ -94,9 +95,12 @@ const Wrapper = styled.div`
         font-size: 16px;
       }
     }
-    h3 {
-      font-size: 20px;
+    .price-inf {
       text-align: right;
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 22px;
     }
     .bottom {
       width: 100%;

@@ -26,9 +26,8 @@ function MainContacts() {
           </div>
           <h3>{t("contact-phone")}</h3>
           <a href={`tel:998954767677`} className="colored">
-            <h3>
-              +998954767677 <br /> +998974508191
-            </h3>
+            <h3>+998954767677</h3>
+            <h3>+998974508191</h3>
           </a>
         </article>
         <article className="flex column align-center">
