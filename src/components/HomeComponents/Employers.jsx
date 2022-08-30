@@ -9,6 +9,12 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import Devider from "../../UI/Devider";
 import { useTranslation } from "react-i18next";
+import t1 from "../../images/t1.jpg";
+import t2 from "../../images/t2.jpg";
+import t3 from "../../images/t3.jpg";
+import t4 from "../../images/t4.jpg";
+import t5 from "../../images/t5.jpg";
+import t6 from "../../images/t6.jpg";
 
 function Employers() {
   const { t } = useTranslation();
@@ -17,7 +23,7 @@ function Employers() {
       <div className="container">
         <Devider half />
         <h2>
-          {t("main-staff")} <span className="absolute">{t('specialists')}</span>{" "}
+          {t("main-staff")} <span className="absolute">{t("specialists")}</span>{" "}
         </h2>
         <Devider half />
         <Swiper
@@ -41,25 +47,22 @@ function Employers() {
           loop={true}
         >
           <SwiperSlide>
-            <Employer />
+            <Employer img={t1} name="Alisher Obidov" />
           </SwiperSlide>
           <SwiperSlide>
-            <Employer />
+            <Employer img={t2} name="Mahmadiyorova Nurjaxon" />
           </SwiperSlide>
           <SwiperSlide>
-            <Employer />
+            <Employer img={t3} name="Zokirjon Tojiboyev" />
           </SwiperSlide>
           <SwiperSlide>
-            <Employer />
+            <Employer img={t4} name="Shavkat Ibragimov" />
           </SwiperSlide>
           <SwiperSlide>
-            <Employer />
+            <Employer img={t5} name="Mirzakarim Norbekov" />
           </SwiperSlide>
           <SwiperSlide>
-            <Employer />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Employer />
+            <Employer img={t6} name="Ahadjon Qo’shoqov" />
           </SwiperSlide>
         </Swiper>
         <Devider half />

@@ -2,20 +2,17 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
-function Employer() {
+function Employer({ img, name }) {
   const { t } = useTranslation();
   return (
     <Wrapper>
-      <img
-        src="https://d15-a.sdn.cz/d_15/c_img_F_G/9E1BZbu.jpeg?fl=cro,0,98,800,450%7Cres,1200,,1%7Cwebp,75"
-        alt=""
-      />
+      <img src={img} alt="" />
       <div className="content">
-        <p>Psixolog</p>
-        <h3 className="playfair">Mirzakarim Norbekov</h3>
+        <p>Trener</p>
+        <h3 className="playfair">{name}</h3>
       </div>
       <div className="flex justify-between">
-        <strong className="colored">16 {t("experience")}</strong>
+        <strong className="colored">{t("experience")}</strong>
         <div className="arrow flex align-center justify-center">
           <svg
             width="13"

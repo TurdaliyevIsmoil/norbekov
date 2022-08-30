@@ -12,18 +12,18 @@ function CourseCard({ data }) {
   const lang = i18next.language;
   const time = data.duration.split(",");
   const monthNames = [
-    "January",
-    "February",
+    "Jan",
+    "Febr",
     "March",
-    "April",
+    "Apr",
     "May",
     "June",
     "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
   ];
   useEffect(() => {
     const div = document.createElement("diV");
@@ -50,15 +50,14 @@ function CourseCard({ data }) {
       <div className="bottom flex column ">
         <h4 className="flex justify-between align-center colored">
           <span>
-            {time[0]} {t("day")}
+            {time[0]}
           </span>
           <span>{time[1]}</span>
         </h4>
         <Button onClick={() => navigate(`/tables/${data.id}`)} darkHover>
           <h5 className="flex align-center">
-            {new Date(data.date).getDay() +
-              " " +
-              monthNames[new Date(data.date).getMonth()]}
+            {new Date(data.date).getDay()}
+            <span>{monthNames[new Date(data.date).getMonth()]}</span>
             <svg
               width="32"
               height="19"
@@ -135,10 +134,13 @@ const Wrapper = styled.div`
         padding: 15px 25px;
       }
       h4 {
-        font-size: 22px;
+        font-size: 18px;
+        text-align: right;
       }
       h5 {
         gap: 10px;
+        font-size: 18px;
+        text-align: left;
       }
     }
     @media (max-width: 1199px) {

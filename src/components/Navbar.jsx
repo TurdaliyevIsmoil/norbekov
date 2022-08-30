@@ -70,7 +70,7 @@ function Navbar() {
               />
             </svg>
           </a>
-          <a href="#" className="call flex align-center">
+          <a href="tel:998954767677" className="call flex align-center">
             <div className="icon flex align-center justify-center">
               <svg
                 width="42"
@@ -87,7 +87,7 @@ function Navbar() {
             </div>
             <div className="flex column">
               <span className="colored">{t("call-now")}</span>
-              <h3 className="colored">+998935616276</h3>
+              <h3 className="colored">+998954767677</h3>
             </div>
           </a>
         </div>
