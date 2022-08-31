@@ -55,7 +55,7 @@ function Header() {
             >
               <div className="container flex justify-between align-end">
                 <NavLink to={`/tables/${i.id}`}>
-                  <h1>{lang === "uz" ? i.post_title : i.post_title_ru}</h1>
+                  {/* <h1>{lang === "uz" ? i.post_title : i.post_title_ru}</h1> */}
                 </NavLink>
                 <div className="arrows flex">
                   <div
@@ -122,7 +122,12 @@ const SlideItem = styled.div`
   min-height: 500px;
   background-size: cover !important;
   background-position: center !important;
-  position: relative;
+  @media (max-width: 767px) {
+    min-height: 100%;
+    position: relative;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+  }
   .container {
     width: 100%;
     padding-bottom: 30px;
@@ -131,6 +136,7 @@ const SlideItem = styled.div`
       align-items: center;
       text-align: center;
       gap: 48px;
+      padding-bottom: 20px;
     }
   }
   * {
@@ -147,12 +153,24 @@ const SlideItem = styled.div`
   }
   .arrows {
     gap: 5px;
+    @media (max-width: 767px) {
+      width: 100%;
+      justify-content: space-between;
+    }
     div {
       border: 2px solid #ffffff;
       width: 60px;
       height: 60px;
       cursor: pointer;
       transition: all 0.3s;
+      @media (max-width: 767px) {
+        width: 30px;
+        height: 30px;
+        border: 0;
+        svg {
+          width: 70%;
+        }
+      }
       &:hover {
         background-color: #fff;
         svg path {
